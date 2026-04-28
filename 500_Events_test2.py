@@ -17,10 +17,10 @@ FAILURE_EVENTS = [
 ]
 
 print("=" * 70)
-print("HIAS 1000 EVENT FAILURE + LOAD SIMULATION STARTED")
+print("HIAS 500 EVENT FAILURE + LOAD SIMULATION STARTED")
 print("=" * 70)
 
-for event_no in range(1, 1001):
+for event_no in range(1, 501):
 
     # Decide event type
     event_type = random.choices(
@@ -84,7 +84,7 @@ for event_no in range(1, 1001):
     print("-" * 70)
 
     # small delay
-    time.sleep(0.5)
+    time.sleep(0.05)
 
-print("\n✅ 1000 EVENT TEST COMPLETED")
+print("\n✅ 500 EVENT TEST COMPLETED")
 print("=" * 70)
